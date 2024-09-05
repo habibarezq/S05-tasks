@@ -7,7 +7,7 @@ class my_node(Node):
         super().__init__("node1")
         self.i=0
         self.nums = [random.randint(0, 100) for _ in range(12)]
-        # Create a timer that calls the check() method every 1 second
+        # create a timer that calls the check() method every 1 second
         self.timer = self.create_timer(1.0, self.check)
     def check(self):
         if self.i < len(self.nums): 
